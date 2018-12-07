@@ -2,17 +2,17 @@
 
 ## Getting Started
 
-1. Clone the repo
+1.  **Clone this repo**
 
-  ```sh
-  git clone git@github.com:Upstatement/dev-env-setup.git && cd dev-env-setup
-  ```
+    ```sh
+    git clone git@github.com:Upstatement/dev-env-setup.git && cd dev-env-setup
+    ```
 
-1. Run the install script
+2.  **Run the install script**
 
-  ```sh
-  sh install.sh
-  ```
+    ```sh
+    sh install.sh
+    ```
 
 ## What This Includes
 
