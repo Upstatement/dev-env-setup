@@ -2,11 +2,9 @@
 
 ## Getting Started
 
-1.  **Clone this repo**
+1.  **Download this repo & unzip it**
 
-    ```sh
-    git clone git@github.com:Upstatement/dev-env-setup.git && cd dev-env-setup
-    ```
+    ![download](./download.png)
 
 2.  **Run the install script**
 
