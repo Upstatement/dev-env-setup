@@ -15,13 +15,18 @@ Welcome to Upstatement! Setting up your computer...
 
 ==============================================================================${NORMAL}\n"
 
+# Create .bash_profile and .bashrc if they don't already exist
+eval "touch ~/.bashrc ~/.bash_profile"
+eval "[ -r ~/.bashrc ] && . ~/.bashrc > ~/.bash_profile"
+eval "chmod 600 ~/{.bashrc,.bash_profile}"
+
 # Install XCode Command Line Tools
 printf "\n${BLUE}Installing XCode Command Line Tools...${NORMAL}\n"
 eval "xcode-select --install"
 
 # Install Homebrew for easier macOS package management
-printf "\n${YELLOW}Installing Homebrew..${NORMAL}\n"
-eval "/usr/bin/ruby -e '$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)'"
+printf "\n${YELLOW}Installing Homebrew...${NORMAL}\n"
+eval '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
 
 # Install NVM for easier Node.js version management
 printf "\n${GREEN}Installing NVM for easier Node.js version management...${NORMAL}\n"
