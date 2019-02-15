@@ -17,7 +17,7 @@ Welcome to Upstatement! Setting up your computer...
 
 # Create .bash_profile and .bashrc if they don't already exist
 eval "touch ~/.bashrc ~/.bash_profile"
-eval "[ -r ~/.bashrc ] && . ~/.bashrc > ~/.bash_profile"
+eval "echo [ -r ~/.bashrc ] && . ~/.bashrc > ~/.bash_profile"
 eval "chmod 600 ~/{.bashrc,.bash_profile}"
 
 # Install XCode Command Line Tools
@@ -37,7 +37,7 @@ eval "nvm alias default node"
 
 # Install Yarn for easier (and faster) Node.js dependency management
 printf "\n${BLUE}Installing Yarn for easier (and faster) Node.js dependency management...${NORMAL}\n"
-eval "brew install yarn --without-node"
+eval "brew install yarn --ignore-dependencies"
 
 # Install Composer for easier PHP dependency management
 printf "\n${MAGENTA}Installing Composer for easier PHP dependency management...${NORMAL}\n"
