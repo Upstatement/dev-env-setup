@@ -43,10 +43,6 @@ eval "brew install yarn --ignore-dependencies"
 printf "\n${MAGENTA}Installing Composer for easier PHP dependency management...${NORMAL}\n"
 eval "brew install composer"
 
-# Install gulp-cli and yeoman NPM packages globally
-printf "\n${GREEN}Installing global npm packages for gulp and yeoman...${NORMAL}\n"
-eval "npm install -g gulp-cli yo"
-
 # Follow the instructions on GitHub to generate a new SSH key and add it to your Github account.
 printf "\n${WHITE}==============================================================================
 
