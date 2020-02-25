@@ -30,8 +30,7 @@ eval '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/
 
 # Install NVM for easier Node.js version management
 printf "\n${GREEN}Installing NVM for easier Node.js version management...${NORMAL}\n"
-eval "curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
-. ~/.bashrc"
+eval "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash"
 eval "nvm install node --lts"
 eval "nvm alias default node"
 
