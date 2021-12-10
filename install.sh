@@ -28,6 +28,12 @@ eval "xcode-select --install"
 printf "\n${YELLOW}Installing Homebrew...${NORMAL}\n"
 eval '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
 
+# If this is an M1 mac
+if [[ `uname -m` == 'arm64' ]]; then
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> "/Users/$USER/.zprofile"
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
 # Install NVM for easier Node.js version management
 printf "\n${GREEN}Installing NVM for easier Node.js version management...${NORMAL}\n"
 eval "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash"
