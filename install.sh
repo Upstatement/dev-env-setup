@@ -37,8 +37,7 @@ fi
 # Install NVM for easier Node.js version management
 printf "\n${GREEN}Installing NVM for easier Node.js version management...${NORMAL}\n"
 eval "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash"
-eval "nvm install node --lts"
-eval "nvm alias default node"
+eval "nvm install --lts"
 
 # Install Yarn for easier (and faster) Node.js dependency management
 printf "\n${BLUE}Installing Yarn for easier (and faster) Node.js dependency management...${NORMAL}\n"
